@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react'
-import Nav from './HomeCompnents/Nav'
-import WalletValue from './HomeCompnents/WalletValue'
+import { useEffect } from 'react'
+import Footer from '../Public-Components/Footer'
 import HomeBtns from './HomeCompnents/HomeBtns'
 import HomeCoins from './HomeCompnents/HomeCoins'
-import Footer from '../Public-Components/Footer'
+import Nav from './HomeCompnents/Nav'
+import WalletValue from './HomeCompnents/WalletValue'
 
 export default function Home(props){
     
