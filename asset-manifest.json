@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/buqw/Sharara-Repo.git/static/css/main.c8283152.css",
+    "main.js": "/buqw/Sharara-Repo.git/static/js/main.7ee29533.js",
+    "static/js/453.2345ec20.chunk.js": "/buqw/Sharara-Repo.git/static/js/453.2345ec20.chunk.js",
+    "static/media/blank-avatar.webp": "/buqw/Sharara-Repo.git/static/media/blank-avatar.4c37be43177d12c38ba5.webp",
+    "index.html": "/buqw/Sharara-Repo.git/index.html",
+    "main.c8283152.css.map": "/buqw/Sharara-Repo.git/static/css/main.c8283152.css.map",
+    "main.7ee29533.js.map": "/buqw/Sharara-Repo.git/static/js/main.7ee29533.js.map",
+    "453.2345ec20.chunk.js.map": "/buqw/Sharara-Repo.git/static/js/453.2345ec20.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c8283152.css",
+    "static/js/main.7ee29533.js"
+  ]
+}
