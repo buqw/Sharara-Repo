@@ -1,0 +1,710 @@
+
+@keyframes loadingIcon {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(3000deg);
+    }
+}
+
+
+
+
+body{
+    background-color: rgb(36, 36, 36);
+    color: aliceblue;
+}
+
+
+.darkModeBody{
+    background-color: rgb(36, 36, 36);
+    color: aliceblue;
+}
+
+.lightModeBody{
+    background-color: rgb(230, 230, 230);
+
+}
+.darkMode{
+    background-color: rgba(48, 48, 48, 0.979);
+    color: aliceblue;
+}
+
+.lightMode{
+    background-color: rgb(255, 255, 255);
+    color: rgb(51, 51, 51);
+}
+
+.darkModeText{
+    color: aliceblue;
+}
+
+.lightModeText{
+    color: rgb(51, 51, 51);
+}
+#homeNav{
+    height: 7vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    padding-left: 1%;
+    padding-top: 1%;
+
+}
+
+.darkModeNav{
+    color: aliceblue;
+}
+
+.lightModeNav{
+    color: rgb(51, 51, 51);
+}
+
+#userInfo{
+    height: 100%;
+    display: flex;
+}
+
+#avatar{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    max-width: 100px;
+}
+
+#avatarImg{
+    height: 80%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#username{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22vw;
+    max-width: 170px;
+    font-size: clamp(15px, 3vw,24px);
+    cursor: pointer;
+}
+
+#searchIcon{
+    width: 10vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#searchIcon div{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(20px,4vw,70px);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+#darkIcon{
+    margin-right: 100px;
+}
+#walletValue{
+    padding-top: 10vh;
+}
+.walletValueProfitDark{
+    background:linear-gradient(to bottom, rgba(66, 255, 66, 0.24) ,rgb(36, 36, 36));
+    color: aliceblue;
+}
+.walletValueProfitLight{
+    background:linear-gradient(to bottom, rgba(66, 255, 66, 0.705) ,rgb(230, 230, 230));
+    color:rgb(54, 54, 54);
+}
+.walletValueLoseDark{
+    background:linear-gradient(to bottom, rgba(255, 84, 84, 0.445) ,rgb(36, 36, 36));
+    color: aliceblue;
+}
+.walletValueLoseLight{
+    background:linear-gradient(to bottom, rgba(255, 66, 66, 0.658) ,rgb(230, 230, 230));
+    color:rgb(54, 54, 54);
+}
+#finalValue{
+    display: flex;
+    justify-content: center;
+    font-size: clamp(40px,6vw,100px);
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#finalValueCont{
+    text-align: center;
+}
+#finalValueCont p{
+    margin: 0px;
+}
+#dailyChange{
+    display: flex;
+    justify-content: center;
+}
+#dailyChangeCont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 340px;
+    width: 17%;
+    max-width: 200px;
+    min-width: 65px;
+}
+#dailyChangeCont p{
+    margin: 0%;
+    font-size: clamp(10px,3vw,30px);
+}
+#numberChange{
+    color: rgb(65, 197, 65);
+}
+#homeChangePerc{
+    background-color: rgba(0, 129, 28, 0.199);
+    border-radius: 8px;
+    color: rgb(65, 197, 65);
+    padding: 3px 8px;
+    margin-left: 10px;
+}
+
+
+#homeButtons{
+    padding: 2%;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 13vh;
+    margin-top: 4vh;
+    max-width: 1500px;
+}
+
+#homeButtons a{
+    width: 19%;
+    height: 100%;
+    border-radius: 12px;
+    border: none;
+    color: rgb(255, 94, 0);
+    overflow: hidden;
+    text-decoration: none;
+}
+
+#homeButtons a div{
+    height: 100%;
+    display: flex;             
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(15px,7vw,60px);
+
+}
+
+
+#homeButtons a p{
+    font-size: clamp(6px,3vw,35px);
+    margin: 0%;
+    color: rgb(126, 126, 126);
+}
+
+#homeButtons a:hover{
+
+    border: solid 1px  rgb(255, 94, 0);;
+
+}
+
+#homeCoinsCont{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2%;
+    max-width: 1500px;
+}
+
+.coinDiv{
+    height: 10vh;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 90px;
+    margin-top: 1.5vh;
+    align-items: center;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.411);
+}
+
+.coinInfo{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    max-width: 200px;
+    justify-content: space-between;
+    
+}
+
+.coinImg{
+    height: 60%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.nameNnumber{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10%;
+    margin-left: 10%;
+
+}   
+
+.nameNnumber p{
+
+    margin: 0%;
+    font-size: clamp(14px,3vw,25px);
+
+}
+
+.valueNchange{
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    height: 70%;
+    text-align: center;
+    font-size: clamp(14px,3vw,30px);
+    align-items: center;
+}
+
+
+.valueNchange .value{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.valueNchange .change{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+}
+
+.change .greenNred{
+    border-radius: 10px;
+    padding: 2px 6px;
+}
+
+.value p{
+    margin: 0%;
+}
+.change p{
+    margin: 0%;
+}
+
+.greenPercent{
+    color: rgb(65, 197, 65);
+    background-color: rgba(65, 197, 65, 0.171);
+}
+
+.redPercent{
+    color: red;
+    background-color: rgba(255, 0, 0, 0.164);
+}
+
+
+.exitIcon{
+    height: 5vh;
+    display: flex;
+    justify-content: end;
+}
+
+.exitIcon a{
+    height: 100%;
+    width:7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:clamp(18px,4vw,55px) ;
+    margin-right: 20px;
+    margin-top: 10px;
+    opacity: 0.8;
+
+}
+
+#sendLogo{
+    margin-top: 5vh;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 94, 0); 
+    font-size: clamp(60px,15vw,150px);
+}
+
+#sendLogo p{
+    font-size: clamp(20px,4vw,35px);
+    margin-top: 0px;
+
+}
+
+
+#sendForm{
+    width: 80%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+}
+
+#sendForm label{
+    font-size: clamp(10px,4vw,30px);
+}
+
+#selectToken{
+    margin-top: 1vh;
+    height: 3vh;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#sendForm .sendingSelect{
+    cursor: pointer;
+}
+
+#sendForm .selected{
+    border: solid 2px rgb(255, 94, 0); 
+
+}
+
+#sendForm label{
+    margin-top: 2vh;
+}
+#sendForm #sendAmount{
+    height: 4vh;
+    margin-top: 1vh;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2vh;
+    outline: none;
+    border: none;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.233);
+}
+
+#sendForm #sendWalletAddress{
+    width: 80%;
+    height: 4vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vh;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2vh;
+    outline: none;
+    border: none;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.233);
+
+}
+
+#sendForm #sendWalletAddress:focus{
+    outline: none;
+    border: 2px solid rgb(255, 94, 0);
+}
+
+#sendForm #sendAmount:focus{
+    outline: none;
+    border: 2px solid rgb(255, 94, 0);
+}
+
+#sendForm .sendButton{
+    width: 30%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8vh;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(20px, 4vw,40px);
+    text-decoration: none;
+    background-color: rgb(255, 94, 0);
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.233);
+
+}
+
+#sendForm .sendButton:hover{
+    background-color:rgb(207, 76, 1) ;
+}
+
+#sendLoadingIconDiv{
+    height: 20vh;
+    margin-top: 22vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: clamp(80px,15vw,220px);
+    color: rgb(255, 94, 0) ;
+}
+.rotatingIcon{
+    animation: loadingIcon 5s linear;
+
+}
+
+#sendLoadingMessage{
+    text-align: center;
+    font-size: clamp(20px,4vw,50px);
+}
+
+#loadingFinalMessage .linkBtns{
+    background-color: rgb(255, 94, 0);
+    text-decoration: none;
+    width: 50%;
+    max-width: 300px;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    margin-top: 10vh;
+    font-size: clamp(15px,3vh,30px);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.217);
+}
+
+#receiveHeader{
+    height: 4vh;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(30px,4vh,50px);
+}
+
+#recCont{
+     height: 50vh;
+     width: 90%;
+     max-width: 1500px;
+     margin-left:auto;
+     margin-right: auto;
+     margin-top: 2vh;
+     display: flex;
+     flex-direction: column;
+     
+}
+
+.recNetwork{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vh;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.326);
+}
+
+.recNetworkInfo{
+    display: flex;
+    align-items: center;
+}
+
+.recNetworkInfo .recNetworkName{
+    margin-left: 2vw;
+    font-size: clamp(20px,4vw,50px);
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.recNameNAddress{
+    text-align: center;
+}
+.recNetworkIcon{
+    font-size: clamp(50px,10vw,100px);
+    margin-left: 2vw;
+    color: rgb(255, 94, 0) ;
+    width: 15vw;
+}
+.recCopyAddress{
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.recCopyAddress button{
+    width: 8vw;
+    aspect-ratio: 1/1;
+    font-size: clamp(30px,7vw,70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+.recAddress{
+    font-size: clamp(10px,2vw,20px);
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 2vw;
+    text-align: start;
+}
+
+#recAddressCopiedMessage{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 35vw;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#recAddressCopiedMessage p{
+
+    font-size: clamp(10px,3vw,25px);
+
+}
+
+
+#buyIcon{
+    margin-top: 3vh;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+    color: rgb(255, 94, 0); 
+    font-size: clamp(60px,15vw,150px);
+}
+
+#buyIcon p{
+    font-size: clamp(20px,4vw,35px);
+    margin-top: 1vh;
+
+}
+
+#buyCont{
+    width: 90%;
+    height: 20vh;
+    max-width: 1500px;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2vh;
+}
+
+#buyCont input{
+    width: 30%;
+    height: 3vh;
+    border-radius:12px ;
+    outline: none; 
+    text-align: center;
+    font-size: clamp(12px,3vw,30px);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.091);
+    border: none;
+}
+
+#buyCont input:focus{
+    border: solid 2px  rgb(255, 94, 0);
+}
+
+#buyPayWays{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 2vw;
+}
+.buyApplePayLink{
+    width: 30%;
+    height: 4vh;
+    margin-top: 6vh;
+    border-radius: 12px;
+}
+.buyApplePayButton{
+    width: 100%;
+    height: 100%;
+    font-size: clamp(30px,7vw,60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    cursor: pointer;
+    color:rgb(255, 94, 0);
+    border: none;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.099);
+}
+
+footer{
+    height: 9vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+footer div{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    
+}
+footer button{
+    width: 20%;
+    height: 100%;
+    font-size: clamp(15px,6vw,40px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 94, 0);
+    cursor: pointer;
+
+}
+
+footer .activeBtn{
+    border-top: solid 4px rgb(255, 94, 0);
+}
