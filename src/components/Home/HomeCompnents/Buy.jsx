@@ -1,9 +1,7 @@
-import { Link } from "react-router-dom";
-import { TbLetterX } from "react-icons/tb";
-import { FaDollarSign } from "react-icons/fa";
-import { FaApplePay } from "react-icons/fa";
+import { FaApplePay, FaDollarSign } from "react-icons/fa";
 import { RiVisaFill } from "react-icons/ri";
-import { useState } from "react";
+import { TbLetterX } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
 
 export default function Buy(props){

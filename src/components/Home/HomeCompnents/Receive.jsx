@@ -1,19 +1,18 @@
-import { Link } from "react-router-dom"
 import { useState } from "react";
-import { useEffect } from "react";
-import { TbLetterX } from "react-icons/tb";
-import { SiSolana } from "react-icons/si";
-import { FiCopy } from "react-icons/fi";
 import { FaEthereum } from "react-icons/fa6";
+import { FiCopy } from "react-icons/fi";
+import { SiSolana } from "react-icons/si";
+import { TbLetterX } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
 export default function Receive(props){
     const [copied,setCopied] = useState(false)
 
     const handleCopy = (network) => {
-        if(network=='SOL'){navigator.clipboard.writeText('WR2KLD3K9KFKXKLERUSJRLKWO3KRF43HD9J3X')
+        if(network==='SOL'){navigator.clipboard.writeText('WR2KLD3K9KFKXKLERUSJRLKWO3KRF43HD9J3X')
             setCopied(true)
         }
-        else if(network=='ETH'){navigator.clipboard.writeText('NMTJ3JHC9M4PBBN2DXLX04MC8RBND038DH1RC')
+        else if(network==='ETH'){navigator.clipboard.writeText('NMTJ3JHC9M4PBBN2DXLX04MC8RBND038DH1RC')
             setCopied(true)
         }
 
