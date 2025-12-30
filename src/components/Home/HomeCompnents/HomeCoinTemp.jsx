@@ -19,12 +19,14 @@ export default function CoinTemp(props){
                 <div className='value'>
                     <p>{props.value}</p>
                 </div>
-
-                <div className='change'>
-                    <div className={props.profit ? 'greenPercent greenNred' : 'redPercent greenNred'}>
-                    <p>{props.dailyChange}</p>
+                
+                {props.coinName != 'USDT' ?(
+                    <div className='change'>
+                        <div className={props.profit ? 'greenPercent greenNred' : 'redPercent greenNred'}>
+                        <p>{props.dailyChange}</p>
+                        </div>
                     </div>
-                </div>
+                ):null}
             </div>
         </div>
 

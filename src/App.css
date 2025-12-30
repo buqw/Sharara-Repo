@@ -10,8 +10,6 @@
 }
 
 
-
-
 body{
     background-color: rgb(36, 36, 36);
     color: aliceblue;
@@ -66,6 +64,7 @@ body{
 #userInfo{
     height: 100%;
     display: flex;
+    text-decoration: none;
 }
 
 #avatar{
@@ -91,7 +90,9 @@ body{
     max-width: 170px;
     font-size: clamp(15px, 3vw,24px);
     cursor: pointer;
+    color: aliceblue;
 }
+
 
 #searchIcon{
     width: 10vw;
@@ -185,14 +186,14 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 13vh;
     margin-top: 4vh;
-    max-width: 1500px;
+    max-width: 1200px;
 }
 
 #homeButtons a{
-    width: 19%;
-    height: 100%;
+    width: 32%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     border-radius: 12px;
     border: none;
     color: rgb(255, 94, 0);
@@ -232,82 +233,59 @@ body{
 }
 
 .coinDiv{
-    height: 10vh;
-    border-radius: 15px;
     display: flex;
     justify-content: space-between;
-    min-height: 90px;
-    margin-top: 1.5vh;
-    align-items: center;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.411);
+    border-radius: 12px;
+
+
+    margin-top: 2vh;
 }
 
 .coinInfo{
-    height: 100%;
-    width: 30%;
     display: flex;
     align-items: center;
-    margin-left: 2%;
-    max-width: 200px;
-    justify-content: space-between;
-    
+    width: 50%;
+    gap: 2vw;
+    padding-left: 2vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-size: clamp(12px,3vw,27px);
 }
 
 .coinImg{
-    height: 60%;
-    aspect-ratio: 1/1;
     border-radius: 50%;
+    width: 25%;
+    max-width: 120px;
 }
-
-.nameNnumber{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10%;
-    margin-left: 10%;
-
-}   
-
+ 
 .nameNnumber p{
-
     margin: 0%;
-    font-size: clamp(14px,3vw,25px);
 
 }
 
 .valueNchange{
+    width: 30%;
     display: flex;
-    width: 25%;
     flex-direction: column;
-    height: 70%;
-    text-align: center;
-    font-size: clamp(14px,3vw,30px);
     align-items: center;
+    justify-content: center;
+    gap: 1vh;
 }
 
 
 .valueNchange .value{
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: clamp(12px,3vw,27px);
 
 }
 
 .valueNchange .change{
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: clamp(12px,3vw,27px);
     width: 50%;
+    max-width: 110px;
+    text-align: center;
 
 }
 
-.change .greenNred{
-    border-radius: 10px;
-    padding: 2px 6px;
-}
 
 .value p{
     margin: 0%;
@@ -319,11 +297,15 @@ body{
 .greenPercent{
     color: rgb(65, 197, 65);
     background-color: rgba(65, 197, 65, 0.171);
+    border-radius: 8px;
+    padding:0.3vh 0 ;
 }
 
 .redPercent{
     color: red;
     background-color: rgba(255, 0, 0, 0.164);
+    padding:0.3vh 0 ;
+    border-radius: 8px;
 }
 
 
@@ -673,6 +655,48 @@ body{
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.099);
 }
 
+/* Recent Section */
+
+#logContainer{
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+}
+
+#recentDiv{
+    display: flex;
+    align-items: center;
+    margin-top: 1.5vh;
+    border-radius: 12px;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.208);
+}
+
+#recentCheck{
+    color: rgb(0, 206, 0);
+    font-size: clamp(50px,5vw,110px);
+    margin-left: 1vw;
+}
+
+#recentMessage{
+    font-size: clamp(15px,3vw,30px);
+}
+#noLogMessage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    font-size: clamp(25px,4vw,40px);
+    text-align: center;
+    border: dashed 2px rgb(255, 94, 0);
+    border-radius: 12px;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.248);
+    margin-top: 5vh;
+    opacity: 0.5;
+}
 footer{
     height: 9vh;
     width: 100%;
@@ -703,6 +727,10 @@ footer button{
     color: rgb(255, 94, 0);
     cursor: pointer;
 
+}
+
+.histBtn{
+    color: rgb(255, 94, 0);
 }
 
 footer .activeBtn{

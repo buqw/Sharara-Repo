@@ -19,18 +19,15 @@ export default function Home(props){
             document.body.classList.add('lightModeBody') 
         }
     })
-
-
+    
     return(
         <>
             <Nav dark={props.dark} changeMode = {props.changeMode} />
             <WalletValue buyAmount={props.buyAmount} walletAmount = {props.walletAmount} dark={props.dark}/>
             <HomeBtns dark={props.dark}/>
-            <HomeCoins dark={props.dark}/>
-            <Footer dark={props.dark}/>
-           
-            {console.log(`Amounntt iss ${props.buyAmount}`)}
-        
+            <HomeCoins usdtAmount={props.usdtAmount} dark={props.dark}/>
+            <Footer activeBtn={1} dark={props.dark}/>
+                   
         </>
         
         

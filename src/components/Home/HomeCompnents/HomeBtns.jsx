@@ -13,8 +13,6 @@ export default function HomeBtns(props){
                     <Link to='/Home/Send' className={props.dark ? 'darkMode' : 'lightMode'}> <div><IoIosSend id='SendIcon'/><p>Send</p></div></Link>
                     <Link to='/Home/Receive' className={props.dark ? 'darkMode' : 'lightMode'}> <div><FaQrcode/><p>Receive</p></div></Link>
                     <Link to='/Home/Buy' className={props.dark ? 'darkMode' : 'lightMode'}> <div><FaDollarSign/><p>Buy</p></div></Link>
-                    <Link to='/Home/Swap' className={props.dark ? 'darkMode' : 'lightMode'}> <div><IoMdSwap/><p>Swap</p></div></Link>
-                    <Link to='/Home/Analysis' className={props.dark ? 'darkMode' : 'lightMode'}> <div><GrAnalytics/><p>Analysis</p></div></Link>
             </div>
          </>       
     )
