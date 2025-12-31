@@ -510,25 +510,28 @@ body{
 }
 
 .recNetwork{
-    height: 10vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: 2vh;
     border-radius: 10px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.326);
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 1vw;
 }
 
 .recNetworkInfo{
     display: flex;
     align-items: center;
+    gap: 1vw;
 }
 
 .recNetworkInfo .recNetworkName{
-    margin-left: 2vw;
     font-size: clamp(20px,4vw,50px);
     margin-top: 0%;
     margin-bottom: 0%;
+    margin-left: 1vw;
 }
 
 .recNameNAddress{
@@ -536,20 +539,24 @@ body{
 }
 .recNetworkIcon{
     font-size: clamp(50px,10vw,100px);
-    margin-left: 2vw;
     color: rgb(255, 94, 0) ;
-    width: 15vw;
+    margin-left: 1vw;
+    max-height: 100px;
+    max-width: 100px;
 }
 .recCopyAddress{
-    width: 10vw;
+    font-size: clamp(50px,10vw,100px);
+    max-width: 120px;
+    max-width: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
-
-}
+    margin-right: 1vw;
+}   
 
 .recCopyAddress button{
-    width: 8vw;
+    max-width: 100px;
+    max-height: 100px ;
     aspect-ratio: 1/1;
     font-size: clamp(30px,7vw,70px);
     display: flex;
@@ -819,7 +826,7 @@ body{
 }
 
 #profName button{
-    width: 30%;
+    width: 28%;
     border-radius: 12px;
     border: 2px solid transparent;
     font-size: clamp(10px,2vw,25px);
@@ -834,11 +841,11 @@ body{
 
 #profName input{
     height: 3vh;
-    width: 66%;
+    width: 65%;
     border-radius: 10px;
     outline: none;
     border: 2px solid transparent;
-    font-size: clamp(15px,3vw,35px);
+    font-size: clamp(16px,3vw,35px);
     padding-top: 0.6vh;
     padding-bottom: 0.6vh;
     box-shadow: inset 1px 1px 12px rgba(0, 0, 0, 0.106);
