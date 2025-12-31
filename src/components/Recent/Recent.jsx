@@ -8,9 +8,9 @@ export default function Recent(props){
                 {props.recentLog.length == 0? (
                     <div id="noLogMessage">
                         <p className={props.dark ? "darkModeText":"lightModeText"}>No recent Activities to show here.</p>
-                    </div>
+                    </div>                
                 ):(null)}
-
+            
                 {props.recentLog.map(e =>{
                     return(
                         <RecentTemp dark={props.dark} proccess={e.process} amount={e.amount} date={e.date}/>

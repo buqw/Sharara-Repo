@@ -22,7 +22,7 @@ export default function Home(props){
     
     return(
         <>
-            <Nav dark={props.dark} changeMode = {props.changeMode} />
+            <Nav username={props.username} avatar={props.avatar} dark={props.dark} changeMode = {props.changeMode} />
             <WalletValue buyAmount={props.buyAmount} walletAmount = {props.walletAmount} dark={props.dark}/>
             <HomeBtns dark={props.dark}/>
             <HomeCoins usdtAmount={props.usdtAmount} dark={props.dark}/>
