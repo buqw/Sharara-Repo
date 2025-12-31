@@ -12,7 +12,6 @@ export default function Home(props){
         if(props.dark){
             document.body.classList.add('darkModeBody')
             document.body.classList.remove('lightModeBody')
-
         }
         else{
             document.body.classList.remove('darkModeBody')
