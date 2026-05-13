@@ -1,10 +1,7 @@
 import {Link} from "react-router-dom";
 import { FaQrcode } from "react-icons/fa6";
 import { IoIosSend } from "react-icons/io";
-import { IoMdSwap } from "react-icons/io";
 import { FaDollarSign } from "react-icons/fa";
-import { GrAnalytics } from "react-icons/gr";
-
 
 export default function HomeBtns(props){
     return(

@@ -11,7 +11,7 @@ export default function Post(props){
                 <p>{props.username}</p>
             </div>
             <div className="post-div-img">
-                <img className="post-img" src={props.img} />
+                <img className="post-img" src={props.img} alt="post" />
             </div>
             <div className="post-info">
                 <p>{props.title}</p>

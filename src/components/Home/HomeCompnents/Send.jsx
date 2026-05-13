@@ -6,7 +6,7 @@ import HomeCoinTemp from "./HomeCoinTemp"
 import BTC from './btc logo.png'
 import SOL from './solana logo.jpg'
 import USDT from './usdt.png'
-import { use, useState } from "react";
+import { useState } from "react";
 
 
 

@@ -20,7 +20,7 @@ export default function CoinTemp(props){
                     <p>${Number(props.value).toFixed(1)}</p>
                 </div>
                 
-                {props.coinName != 'USDT' ?(
+                {props.coinName !== 'USDT' ?(
                     <div className='change'>
                         <div className={props.profit ? 'greenPercent greenNred' : 'redPercent greenNred'}>
                         <p>{props.dailyChange}</p>

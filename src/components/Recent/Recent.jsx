@@ -5,7 +5,7 @@ export default function Recent(props){
     return(
         <div id="recent-body" className={props.dark ? 'darkModeBody' : 'lightModeBody'}>
             <div id="logContainer">
-                {props.recentLog.length == 0? (
+                {props.recentLog.length === 0? (
                     <div id="noLogMessage">
                         <p className={props.dark ? "darkModeText":"lightModeText"}>No recent Activities to show here.</p>
                     </div>                

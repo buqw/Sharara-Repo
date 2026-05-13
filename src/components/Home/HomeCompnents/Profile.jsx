@@ -2,7 +2,7 @@ import { TbLetterX } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import { use, useState } from "react";
 
-export default function(props){
+export default function Profile(props){
 
     const [wantedUsername, setWantedUsername] = useState(props.username);
     const [errorMessage,setErrorMessage] = useState("");
@@ -13,12 +13,12 @@ export default function(props){
     }
 
     const handlehange3 = ()=>{
-        if(wantedUsername == ""){
+        if(wantedUsername === ""){
             setErrorMessage("Invalid username.")
             return;
         }else{setErrorMessage("")}
 
-        if(wantedUsername == props.username){
+        if(wantedUsername === props.username){
             setErrorMessage(`${wantedUsername} is your current username.`)
             return;
         }else{setErrorMessage("")}

@@ -1,7 +1,7 @@
 import { TiInputChecked } from "react-icons/ti";
 
 
-export default function(props){
+export default function RecentTemp(props){
 
     return(
         <div id="recentDiv" className={props.dark ? "darkMode": "lightMode"}>
