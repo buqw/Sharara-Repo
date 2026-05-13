@@ -1,6 +1,6 @@
 import { TbLetterX } from "react-icons/tb";
 import { Link } from "react-router-dom";
-import { use, useState } from "react";
+import { useState } from "react";
 
 export default function Profile(props){
 

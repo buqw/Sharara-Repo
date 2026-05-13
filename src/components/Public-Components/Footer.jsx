@@ -6,7 +6,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Footer(props){
-    const [active, setActive] = useState(props.activeBtn);
+    const [, setActive] = useState(props.activeBtn);
 
     return(
         
