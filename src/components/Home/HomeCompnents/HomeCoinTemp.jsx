@@ -11,13 +11,13 @@ export default function CoinTemp(props){
                 <img src={props.logo} alt="" className='coinImg' />
                 <div className='nameNnumber'>
                     <p>{props.coinName}</p>
-                    <p>{props.quant}</p>
+                    <p>{props.coinName === "BTC"?Number(props.quant).toFixed(5) :props.quant}</p>
                 </div>
             </div>
 
             <div className='valueNchange'>
                 <div className='value'>
-                    <p>{props.value}</p>
+                    <p>${Number(props.value).toFixed(1)}</p>
                 </div>
                 
                 {props.coinName != 'USDT' ?(

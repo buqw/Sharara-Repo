@@ -335,7 +335,7 @@ body{
 
 }
 
-#sendLogo{
+.sendLogo{
     margin-top: 5vh;
     height: 20vh;
     display: flex;
@@ -346,7 +346,7 @@ body{
     font-size: clamp(60px,15vw,150px);
 }
 
-#sendLogo p{
+.sendLogo p{
     font-size: clamp(20px,4vw,35px);
     margin-top: 0px;
 
@@ -435,23 +435,27 @@ body{
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 8vh;
+    margin-top: 1vh;
     height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: clamp(20px, 4vw,40px);
-    text-decoration: none;
     background-color: rgb(255, 94, 0);
     border-radius: 15px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.233);
-
+    margin-bottom: 5vh;
+    cursor: pointer;
 }
 
 #sendForm .sendButton:hover{
     background-color:rgb(207, 76, 1) ;
 }
 
+#sendForm #wrnmsg{
+    color: red;
+    margin-top: 2vh;
+}
 #sendLoadingIconDiv{
     height: 20vh;
     margin-top: 22vh;
@@ -463,7 +467,6 @@ body{
 }
 .rotatingIcon{
     animation: loadingIcon 5s linear;
-
 }
 
 #sendLoadingMessage{
@@ -723,6 +726,7 @@ body{
     color: rgb(0, 206, 0);
     font-size: clamp(55px,7vw,90px);
     margin-left: 1vw;
+    display: flex;
 }
 
 #recentMessage{
@@ -889,6 +893,65 @@ body{
     background-color: rgba(240, 248, 255, 0.522);
 }
 
+#swap-cont{
+    width: 80%;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#swap-cont p{
+    font-size: clamp(14px,3vw,22px);
+}
+
+#swap-cont select{
+    width: 80%;
+    max-width: 800px;
+    height: 5vh;
+    border-radius: 15px;
+    text-align: center;
+    font-size: clamp(15px,3vw,25px);
+
+}
+
+#swap-cont select:focus{
+    border: solid 1px rgb(255, 94, 0);
+}
+
+#swap-cont input{
+    width: 60%;
+    height: 3vh;
+    border-radius:15px;
+    text-align: center;
+    font-size: clamp(12px,2vw,20px);
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.452); 
+    border: 1px rgba(0, 0, 0, 0.644) solid;
+
+}
+
+#swap-cont button{
+    width: 30%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(20px, 4vw,40px);
+    background-color: rgb(255, 94, 0);
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.233);
+    margin-bottom: 5vh;
+    cursor: pointer;
+
+}
+
 footer{
     height: 9vh;
     width: 100%;
@@ -923,6 +986,11 @@ footer button{
 
 .histBtn{
     color: rgb(255, 94, 0);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 footer .activeBtn{

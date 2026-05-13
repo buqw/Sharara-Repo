@@ -16,10 +16,10 @@ export default function WalletValue(props){
             <div id='dailyChange'>
                 <div id='dailyChangeCont'>
                     <div id='numberChange'>
-                        <p>+$20</p>
+                        <p>+$650</p>
                     </div>    
                     <div id='homeChangePerc'>
-                        <p>+10%</p>
+                        <p>+5%</p>
                     </div>
                 </div>
             </div>

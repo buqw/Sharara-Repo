@@ -24,7 +24,7 @@ export default function Home(props){
             <Nav username={props.username} avatar={props.avatar} dark={props.dark} changeMode = {props.changeMode} />
             <WalletValue buyAmount={props.buyAmount} walletAmount = {props.walletAmount} dark={props.dark}/>
             <HomeBtns dark={props.dark}/>
-            <HomeCoins usdtAmount={props.usdtAmount} dark={props.dark}/>
+            <HomeCoins btcAmount={props.btcAmount} solAmount={props.solAmount} usdtAmount={props.usdtAmount} dark={props.dark}/>
             <Footer activeBtn={1} dark={props.dark}/>
                    
         </>

@@ -17,6 +17,7 @@ export default function Recent(props){
                     )
                 })}
             </div>
+
             <Footer activeBtn={3} dark={props.dark}/>
         </div>
     )
