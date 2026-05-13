@@ -74,7 +74,7 @@ export default function Swap(props){
         navigate("/Send/Loading")
     }
     return(
-        <div>
+        <div id="swap-body" className={props.dark ? 'darkModeBody' : 'lightModeBody'}>
             <div className="sendLogo">
                 <IoMdSwap/>
                 <div>
@@ -89,7 +89,7 @@ export default function Swap(props){
                         <option value="SOL">Solana ({props.solAmount})</option>
                         <option value="USDT">USDT ({props.usdtAmount})</option>
                     </select>
-                    <p>To</p>
+                    <p className={props.dark ? 'darkModeText' : 'lightModeText'}>To</p>
                     <select value={wantedToken} onChange={wantedHandle} className={props.dark ? 'darkMode' : 'lightMode'} name="" id="">
                         <option value="USDT">USDT </option>                        
                         <option value="BTC">Bitcoin</option>
@@ -98,7 +98,7 @@ export default function Swap(props){
                     <p>Enter the amount of {ownedToken}</p>
                     <input min={1} onChange={handleChange} value={amount} placeholder={`Amount of ${ownedToken}`} className={props.dark ? 'darkMode' : 'lightMode'} type="number" />
                     <p>{message}</p>
-                    <button onClick={handleClick}>Swap</button>
+                    <button onClick={handleClick}><p className={props.dark ? 'darkModeText' : 'lightModeText'}>Swap</p></button>
             </div>
 
             <Footer activeBtn={2} dark={props.dark}/>

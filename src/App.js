@@ -8,6 +8,7 @@ import Receive from './components/Home/HomeCompnents/Receive'
 import Buy from "./components/Home/HomeCompnents/Buy";
 import Recent from "./components/Recent/Recent";
 import Swap from "./components/Swap/Swap";
+import Explore from "./components/Explore/Explore";
 import Profile from "./components/Home/HomeCompnents/Profile";
 import avatar from "./components/Home/HomeCompnents/blank-avatar.webp"
 
@@ -15,7 +16,7 @@ function App() {
   const [dark , changeMode] = useState(()=>{
     const saved = localStorage.getItem("mode")
     if (!saved || saved === "undefined") {
-      return 1;
+      return true;
     }
 
     return JSON.parse(saved);
@@ -87,6 +88,8 @@ function App() {
   const [username,setUsername] = useState('Sharara_User')
   const [userEmail] = useState("HelloWorld@example.com")
   return (
+
+
     <Router>
       <Routes>
         <Route path="/"  element={<Home btcAmount={btcAmount} solAmount={solAmount} usdtAmount={usdtAmount} walletAmount={walletAmount} setWalletAmount={setWalletAmount} btcPrice={btcPrice} solPrice={solPrice}  username={username} avatar={currAvatar} dark={dark} changeMode={changeMode}/>}/>
@@ -97,6 +100,7 @@ function App() {
         <Route path="/Send/Loading" element={<SendLoading dark={dark}/>}/>
         <Route path="/Swap" element={<Swap setRecentLog={setRecentLog} setUsdtAmount={setUsdtAmount} setBtcAmount={setBtcAmount} setSolAmount={setSolAmount} btcAmount={btcAmount} solAmount={solAmount} usdtAmount={usdtAmount} dark={dark}/>}/>
         <Route path="/History" element={<Recent recentLog={recentLog} dark={dark}/>}/>
+        <Route path="/Explore" element={ <Explore dark={dark}/>}/>
       </Routes>
 
      

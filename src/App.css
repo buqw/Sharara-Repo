@@ -336,8 +336,8 @@ body{
 }
 
 .sendLogo{
-    margin-top: 5vh;
     height: 20vh;
+    padding-top: 5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -703,6 +703,10 @@ body{
 }
 
 /* Recent Section */
+#recent-body{
+    height: 95vh;
+    padding-top: 5vh;
+}
 
 #logContainer{
     width: 80%;
@@ -711,7 +715,6 @@ body{
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5vh;
 }
 
 #recentDiv{
@@ -892,7 +895,9 @@ body{
     margin-top: 0.5vh;
     background-color: rgba(240, 248, 255, 0.522);
 }
-
+#swap-body{
+    height: 100vh;
+}
 #swap-cont{
     width: 80%;
     max-width: 1500px;
@@ -943,7 +948,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: clamp(20px, 4vw,40px);
     background-color: rgb(255, 94, 0);
     border-radius: 15px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.233);
@@ -951,6 +955,149 @@ body{
     cursor: pointer;
 
 }
+#swap-cont button p{
+    font-size: clamp(20px, 4vw,40px);
+    opacity: 0.7;
+}
+
+#explore-body{
+    height: 97vh;
+    padding-top: 3vh;
+}
+
+#explore-body header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#explore-body header #title-explore{
+    font-size: clamp(20px,3vw,30px);
+    margin-bottom: 1vh;
+}
+
+
+#sec-btns-div{
+    width: 40%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    height: 4.5vh;
+}
+
+
+.sec-btns{
+    width: 50%;
+    cursor: pointer;
+    border-color: rgba(98, 97, 97, 0.38);
+    transition: background-color 0.3s ease ;
+}
+
+.sec-btns:nth-child(2){
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+.sec-btns:nth-child(1){
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#sec-btns-div #activeBtn{
+    background-color: rgb(255, 94, 0);
+    box-shadow: inset 1px 0px 10px rgba(0, 0, 0, 0.878);
+    
+}
+
+.sec-btns p{
+    margin: auto;
+    font-size: clamp(12px,3vw,28px);
+}
+
+#social-body{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
+    margin-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3vh;
+    padding-bottom: 12vh;
+
+}
+
+.post-body{
+    background-color: rgb(62, 62, 62);
+    width: 20%;
+    max-width: 80%;
+    min-width: 300px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.419);
+}
+
+.post-user{
+    font-size: clamp(18px,2vw,22px);
+}
+.post-user p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+
+.post-div-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.post-div-img img{
+    width: 95%;
+    border-radius: 12px;
+}
+
+.post-info p:nth-child(1){
+    font-size:clamp(16px,2vw,22px) ;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.post-info p:nth-child(2){
+    margin-left: 10px;
+    font-size: clamp(12px,2vw,18px);
+}
+
+
+.interacts {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin-left: 10px;
+    gap: 2vw;
+}
+
+.interacts p{
+    font-size: 1.5rem;
+    margin: 0%;
+    cursor: pointer;
+}
+
+#liked{
+    color: red;
+}
+
+#repost{
+    color: rgb(1, 182, 1);
+}
+
 
 footer{
     height: 9vh;

@@ -3,7 +3,7 @@ import RecentTemp from "./RecentTemp"
 
 export default function Recent(props){
     return(
-        <div>
+        <div id="recent-body" className={props.dark ? 'darkModeBody' : 'lightModeBody'}>
             <div id="logContainer">
                 {props.recentLog.length == 0? (
                     <div id="noLogMessage">
